@@ -11,7 +11,7 @@ public class Exercise1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int numUser; //Variable to store the number entered by the user
+		int numUser; //Variable to store the number entered by the user-
 		final String yCapicua = "El número introducido SI es capicúa"; //Constant to print it when the number is palindromic
 		
 		Scanner sc = new Scanner(System.in); //Scanner is started to introduce data into variables
@@ -22,31 +22,33 @@ public class Exercise1 {
 		numUser = sc.nextInt();
 		System.out.println();
 		
-		if (numUser < 0 || numUser > 9999) {
+		if (numUser < 0 || numUser > 9999) { //if the number is less than 0 or more than 9999 the program will print an error
 			
 			System.out.println("ERROR: El número introducido no está comprendido entre 0 y 9999");
 			
-		} else if (numUser < 10) { //if the number 
+		} else if (numUser < 10) { //if the number is less than 10 it means it is a single digit so is directly palindromic
+			
+			System.out.println(yCapicua); 
+			
+		//From this point the program will search for the number of digits the number has
+			
+		} else if (numUser < 100 && numUser/10 == numUser%10) { //(two digits) they have to be the same
+			System.out.println(yCapicua);
+			
+		} else if (numUser < 1000 && numUser/100 == numUser%10) { //(Three digits) the first and the last one has to be the same
 			
 			System.out.println(yCapicua);
 			
-		} else if (numUser < 100 && numUser/10 == numUser%10) {
+		} else if (numUser < 10000 && numUser/1000 == numUser%10 && (numUser/100)%10 == (numUser/10)%10) { //(Four digits) the first and the last, 
+																										   //and the second and the third have to be the same numbers
 			
 			System.out.println(yCapicua);
 			
-		} else if (numUser < 1000 && numUser/100 == numUser%10) {
-			
-			System.out.println(yCapicua);
-			
-		} else if (numUser < 10000 && numUser/1000 == numUser%10 && (numUser/100)%10 == (numUser/10)%10) {
-			
-			System.out.println(yCapicua);
-			
-		} else
+		} else //if none of the previous options are fulfilled, it will say that the number isn't palindromic
 			
 			System.out.println("El número introducido NO es capicúa");
 		
-		sc.close();
+		sc.close(); //Scanner is closed
 		
 	}
 
