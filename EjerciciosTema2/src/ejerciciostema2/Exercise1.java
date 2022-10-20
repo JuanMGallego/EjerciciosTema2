@@ -11,7 +11,7 @@ public class Exercise1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int numUser; //Variable to store the number entered by the user-
+		int numUser; //Variable to store the number entered by the user
 		final String yCapicua = "El número introducido SI es capicúa"; //Constant to print it when the number is palindromic
 		
 		Scanner sc = new Scanner(System.in); //Scanner is started to introduce data into variables

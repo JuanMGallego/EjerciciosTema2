@@ -10,7 +10,6 @@ public class Exercise3 {
 		double buyFood;
 		int numAnimal;
 		double dailyFood;
-		double needFood;
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -22,9 +21,11 @@ public class Exercise3 {
 		dailyFood = sc.nextDouble();
 		System.out.println();
 		
-		needFood = numAnimal * buyFood;
-		
-		if (needFood <= dailyFood) {
+		if (numAnimal == 0) {
+			
+			System.out.println("ERROR: Ha introducido una cantidad de 0 animales");
+			
+		} else if (numAnimal * dailyFood <= buyFood) {
 			
 			System.out.println("Hay comida suficiente para todos los animales");
 			
