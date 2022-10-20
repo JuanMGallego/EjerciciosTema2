@@ -12,7 +12,7 @@ public class Exercise1 {
 		// TODO Auto-generated method stub
 
 		int numUser; //Variable to store the number entered by the user
-		final String yCapicua = "El número introducido SI es capicúa"; //Constant to print it when the number is palindromic
+		final String Y_PALIN = "El número introducido SI es capicúa"; //Constant to print it when the number is palindromic
 		
 		Scanner sc = new Scanner(System.in); //Scanner is started to introduce data into variables
 		
@@ -28,21 +28,21 @@ public class Exercise1 {
 			
 		} else if (numUser < 10) { //if the number is less than 10 it means it is a single digit so is directly palindromic
 			
-			System.out.println(yCapicua); 
+			System.out.println(Y_PALIN); 
 			
 		//From this point the program will search for the number of digits the number has
 			
 		} else if (numUser < 100 && numUser/10 == numUser%10) { //(two digits) they have to be the same
-			System.out.println(yCapicua);
+			System.out.println(Y_PALIN);
 			
 		} else if (numUser < 1000 && numUser/100 == numUser%10) { //(Three digits) the first and the last one has to be the same
 			
-			System.out.println(yCapicua);
+			System.out.println(Y_PALIN);
 			
 		} else if (numUser < 10000 && numUser/1000 == numUser%10 && (numUser/100)%10 == (numUser/10)%10) { //(Four digits) the first and the last, 
 																										   //and the second and the third have to be the same numbers
 			
-			System.out.println(yCapicua);
+			System.out.println(Y_PALIN);
 			
 		} else //if none of the previous options are fulfilled, it will say that the number isn't palindromic
 			

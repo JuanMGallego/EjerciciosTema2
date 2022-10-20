@@ -12,6 +12,7 @@ public class Exercise4 {
 		int scndDigit;
 		String writFrstNum;
 		String writScndNum;
+		final String FINAL_MESSAGE= "Su número escrito con letras es: ";
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -66,43 +67,43 @@ public class Exercise4 {
 		
 		writFrstNum = switch (frstDigit) {
 		
-		case 1 -> {
-			yield "dieci";
-			}
-		
-		case 2 -> {
-			yield "veinti";
-			}
-		
-		case 3 -> {
-			yield "treinta y ";
-			}
-		
-		case 4 -> {
-			yield "cuarenta y ";
-			}
-		
-		case 5 -> {
-			yield "cincuenta y ";
-			}
-		
-		case 6 -> {
-			yield "sesenta y ";
-			}
-		
-		case 7 -> {
-			yield "setenta y ";
-			}
-		
-		case 8 -> {
-			yield "ochenta y ";
-			}
-		
-		case 9 -> {
-			yield "noventa y ";
-			}
-		
-		default -> "";
+			case 1 -> {
+				yield "dieci";
+				}
+			
+			case 2 -> {
+				yield "veinti";
+				}
+			
+			case 3 -> {
+				yield "treinta y ";
+				}
+			
+			case 4 -> {
+				yield "cuarenta y ";
+				}
+			
+			case 5 -> {
+				yield "cincuenta y ";
+				}
+			
+			case 6 -> {
+				yield "sesenta y ";
+				}
+			
+			case 7 -> {
+				yield "setenta y ";
+				}
+			
+			case 8 -> {
+				yield "ochenta y ";
+				}
+			
+			case 9 -> {
+				yield "noventa y ";
+				}
+			
+			default -> "";
 		
 		};
 		
@@ -114,27 +115,33 @@ public class Exercise4 {
 			
 			switch (num) {
 			
-			case 10 -> System.out.println("diez");
+				case 10 -> System.out.println(FINAL_MESSAGE + "diez");
+				
+				case 11 -> System.out.println(FINAL_MESSAGE + "once");
+				
+				case 12 -> System.out.println(FINAL_MESSAGE + "doce");
+				
+				case 13 -> System.out.println(FINAL_MESSAGE + "trece");
+				
+				case 14 -> System.out.println(FINAL_MESSAGE + "catorce");
+				
+				case 15 -> System.out.println(FINAL_MESSAGE + "quince");
+				
+				case 20 -> System.out.println(FINAL_MESSAGE + "veinte");
 			
-			case 11 -> System.out.println("once");
-			
-			case 12 -> System.out.println("doce");
-			
-			case 13 -> System.out.println("trece");
-			
-			case 14 -> System.out.println("catorce");
-			
-			case 15 -> System.out.println("quince");
-			
-			case 20 -> System.out.println("veinte");
+			}
 			
 		} else if (num < 10) {
 				
-				System.out.println();
-				
-			}
+			System.out.println(FINAL_MESSAGE + writScndNum);
+			
+		} else if (num > 10) {
+			
+			System.out.println(FINAL_MESSAGE + writFrstNum + writScndNum);
 			
 		}
+		
+		sc.close();
 		
 	}
 
