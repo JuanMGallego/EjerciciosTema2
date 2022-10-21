@@ -12,7 +12,7 @@ public class Exercise4 {
 		int scndDigit;
 		String writFrstNum;
 		String writScndNum;
-		final String FINAL_MESSAGE= "Su número escrito con letras es: ";
+		final String FINAL_MESSAGE = "Su número escrito con letras es: ";
 		
 		Scanner sc = new Scanner(System.in);
 		
