@@ -111,7 +111,7 @@ public class Exercise4 {
 			
 			System.out.println("ERROR: El número introducido no cumple con el número de caracteres min/máx");
 			
-		} else if (num > 10 && num < 16 || num == 20) {
+		} else if (num > 10 && num < 16 || scndDigit == 0) {
 			
 			switch (num) {
 			
@@ -128,6 +128,20 @@ public class Exercise4 {
 				case 15 -> System.out.println(FINAL_MESSAGE + "quince");
 				
 				case 20 -> System.out.println(FINAL_MESSAGE + "veinte");
+				
+				case 30 -> System.out.println(FINAL_MESSAGE + "treinta");
+				
+				case 40 -> System.out.println(FINAL_MESSAGE + "cuarenta");
+				
+				case 50 -> System.out.println(FINAL_MESSAGE + "cincuenta");
+				
+				case 60 -> System.out.println(FINAL_MESSAGE + "sesenta");
+				
+				case 70 -> System.out.println(FINAL_MESSAGE + "setenta");
+				
+				case 80 -> System.out.println(FINAL_MESSAGE + "ochenta");
+				
+				case 90 -> System.out.println(FINAL_MESSAGE + "noventa");
 			
 			}
 			
