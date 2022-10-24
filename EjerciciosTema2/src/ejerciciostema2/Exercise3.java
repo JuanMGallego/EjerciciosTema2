@@ -17,7 +17,7 @@ public class Exercise3 {
 		buyFood = sc.nextDouble();
 		System.out.print("Introduzca el número de animales: ");
 		numAnimal = sc.nextInt();
-		System.out.print("Introduzca la cantidad de comida que come cada animal en kg: ");
+		System.out.print("Introduzca la cantidad de comida que comen todos los animales en kg: ");
 		dailyFood = sc.nextDouble();
 		System.out.println();
 		
@@ -25,13 +25,13 @@ public class Exercise3 {
 			
 			System.out.println("ERROR: Ha introducido una cantidad de 0 animales");
 			
-		} else if (numAnimal * dailyFood <= buyFood) {
+		} else if (dailyFood <= buyFood) {
 			
 			System.out.println("Hay comida suficiente para todos los animales");
 			
 		} else {
 			
-			dailyFood = buyFood / numAnimal;
+			dailyFood = buyFood / numAnimal; 
 			
 			System.out.println("Los animales no tienen suficiente comida, por lo que deberán comer " + dailyFood + "kg cada uno");
 			
