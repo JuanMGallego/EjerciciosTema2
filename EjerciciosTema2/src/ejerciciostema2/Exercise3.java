@@ -4,6 +4,14 @@ import java.util.Scanner;
 
 public class Exercise3 {
 
+	//buyFood = 200, numAnimal = 0, dailyFood = 150 --> ERROR: Ha introducido una cantidad de 0 o menos animales
+	//buyFood = 140, numAnimal = -23, dailyFood = 50 --> ERROR: Ha introducido una cantidad de 0 o menos animales
+	//buyFood = 300, numAnimal = 50, dailyFood = 200 --> Hay comida suficiente para todos los animales
+	//buyFood = 100, numAnimal = 50, dailyFood = 200 --> Los animales no tienen suficiente comida, por lo que deberán comer 2.0kg cada uno
+	//buyFood = 451, numAnimal = 32, dailyFood = 345 --> Hay comida suficiente para todos los animales
+	//buyFood = 312, numAnimal = 234, dailyFood = 400 --> Los animales no tienen suficiente comida, por lo que deberán comer 1.3333333333333333kg cada uno
+
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -21,9 +29,9 @@ public class Exercise3 {
 		dailyFood = sc.nextDouble();
 		System.out.println();
 		
-		if (numAnimal == 0) {
+		if (numAnimal <= 0) {
 			
-			System.out.println("ERROR: Ha introducido una cantidad de 0 animales");
+			System.out.println("ERROR: Ha introducido una cantidad de 0 o menos animales");
 			
 		} else if (dailyFood <= buyFood) {
 			

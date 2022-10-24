@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Exercise2 {
 
+	//numUser = 125476 --> ERROR: El número introducido no cumple con el número de caracteres min/máx
+	//numUser = 34125132531 --> ERROR: El número introducido no cumple con el número de caracteres min/máx
+	//numUser = 04276478 --> El DNI completo es: 04276478L
+	//numUser = 77824064 --> El DNI completo es: 77824064E
+	//numUser = 83105503 --> El DNI completo es: 83105503V
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
