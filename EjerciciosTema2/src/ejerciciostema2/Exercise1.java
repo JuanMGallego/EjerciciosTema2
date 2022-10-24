@@ -8,6 +8,16 @@ public class Exercise1 {
 	introducing higher or lower numbers it will give an error. If no one of this conditions are fulfilled like with the 
 	number 1234, the program will say that it isn't palindromic*/
 	
+	//numUser = -2 --> ERROR: El número introducido no está comprendido entre 0 y 9999
+	//numUser = 12345 --> ERROR: El número introducido no está comprendido entre 0 y 9999
+	//numUser = 9 --> ERROR: El número introducido SI es capicúa
+	//numUser = 10 --> ERROR: El número introducido NO es capicúa
+	//numUser = 55 --> ERROR: El número introducido SI es capicúa
+	//numUser = 440 --> ERROR: El número introducido NO es capicúa
+	//numUser = 606 --> ERROR: El número introducido SI es capicúa
+	//numUser = 4755 --> ERROR: El número introducido NO es capicúa
+	//numUser = 7557 --> ERROR: El número introducido SI es capicúa
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
